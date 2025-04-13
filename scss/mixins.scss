@@ -1,0 +1,27 @@
+@mixin a-like-button ($a, $b, $c ){
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #1E1E1E;
+    background-color: $a;
+    border-radius: 24px;
+    max-width: $b;
+    padding: $c;
+    box-shadow: 0px 6px 12px 0px #F9C06A38;
+}
+
+@mixin text ($ff, $fw, $fs, $lh, $cl){
+            font-family: $ff;
+            font-weight: $fw;
+            font-size: $fs;
+            line-height: $lh;
+            color: $cl;
+}
+
+@mixin flexbox ($jc, $ali, $fld, $gap){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ali;
+    flex-direction: $fld;
+    gap: $gap;
+}

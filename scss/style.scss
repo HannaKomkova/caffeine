@@ -1,0 +1,132 @@
+@import "./mixins.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", sans-serif;
+} 
+
+.container{
+    max-width: 1180px;
+    padding: 0 16px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.bg-img {
+        background-image: url(../img/coffee_image.png);
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+header {
+    padding: 20px 0;
+
+    .header-wrapper {
+        @include flexbox (space-between, center, row, 0);
+
+        h2{
+            @include text ("Clicker Script", 400, 35px, 100%, #FFFFFF );
+        }
+
+        nav {
+            @include flexbox (unset, center, row, 42px);
+
+            a{
+                @include text ("Playfair Display", 500, 14px, 100%, #FFFFFF);
+            }
+        }
+
+        .sing-menu {
+            @include flexbox (center,center, row, 35px);
+
+            a{
+                @include text ("Playfair Display", 500, 14px, 100%, #FFFFFF);
+            }
+            
+
+            .sing-in{
+                text-decoration: underline;
+            }
+
+            .sing-up{
+                @include a-like-button (#F9C06A, 101px, 15px 27px);
+                font-weight: 500;
+                font-size: 14px;
+                color: #1E1E1E;
+
+                &:hover{
+                    @include a-like-button (#b88b47, 101px, 15px 27px);
+                }
+        
+            }
+        }    
+     }
+ }
+    
+
+.hero{
+    padding: 95px 0;
+
+    .hero-wrapper{
+        @include flexbox (unset, unset, column, 0);
+        max-width: 527px;
+
+        h2{
+            @include text("Playfair Display", 500, 22px, 100%, #FFFFFF );
+            margin-bottom: 50px;
+        }
+
+        h1{
+            @include text ("Clicker Script", 400, 220px, 100%,#FFFFFF );
+            margin-bottom: 34px;
+        }
+
+        h3{
+            @include text ("Playfair Display", 400, 20px, 34px, #FFFFFF);
+            margin-bottom: 20px;
+        }
+
+        a{
+            @include a-like-button (#F9C06A, 135px, 14px 27px);
+        }
+    }
+}
+
+.discover{
+
+    padding: 82px 0;
+
+        .discover-wrapper {
+            @include flexbox (space-between, center, row, 16px);
+
+            .discover-description{
+                @include flexbox (unset, unset, column, 29px);
+
+                max-width: 585px;    
+
+                    h2{
+                        @include text ("Playfair Display", 700, 54px, 100%, #603809);
+                    }
+
+                    h3{
+                        @include text ("Playfair Display", 400, 20px, 34px, #707070);
+                    }
+
+                    a{
+                        @include a-like-button (#F9C06A, 134px, 14px 23px);
+                    }
+            }        
+        }
+}
