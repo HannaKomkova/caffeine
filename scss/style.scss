@@ -106,7 +106,8 @@ header {
 
 .discover{
 
-    padding: 82px 0;
+    padding-top: 82px;
+    margin-bottom: 82px;
 
         .discover-wrapper {
             @include flexbox (space-between, center, row, 16px);
@@ -130,3 +131,289 @@ header {
             }        
         }
 }
+
+.coffee{
+    margin-bottom: 82px;
+
+    .coffee-wrapper{
+       @include flexbox (unset, center, column, 0); 
+
+        h2 {
+            @include text ("Playfair Display", 700, 54px, 100%, #603809);
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            @include text ("Playfair Display", 400, 20px, 34px, #707070);
+            margin-bottom: 32px;
+        }
+
+        .coffee-menu {
+            @include flexbox (space-between, center, row, 20px); 
+
+            .coffee-item{
+                @include flexbox (unset, center, column, 0);
+                max-width: 280px;
+
+                .coffee-item-description{
+                    @include flexbox (unset, center, column, 6px);
+                    padding: 14px 0 42px;
+                    width: 100%;
+                    border: 1px solid #F9C06A6B;
+                    border-top: unset;
+                    background-color: #FFF9F1;
+
+                    h4 {
+                        @include text ("Playfair Display", 700, 22px, 100%, #603809);
+                    }
+
+                    p {
+                        @include text ("Playfair Display", 400, 16px, 100%,#1E1E1E);
+                    }
+
+                    h5{
+                        @include text ("Playfair Display", 700, 18px, 100%, #603809);
+                    }
+                }
+
+           a {
+                @include a-like-button (#F9C06A, 134px, 17px 26px 15px );
+                margin-top: -17px;
+            }     
+            }
+        }
+    }
+}
+
+.about {
+    margin-bottom: 82px;
+
+    .about-wrapper{
+        @include flexbox (unset, center, column, 0);
+
+        h2 {
+            @include text ("Playfair Display", 700, 54px, 100%, #603809);
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            @include text ("Playfair Display", 400, 20px, 34px, #707070);
+            margin-bottom: 32px;
+            text-align: center;
+
+            span {
+                @include text ("Playfair Display", 700, 30px, 34px, #603809);
+            }
+        }
+
+        .about-menu {
+            @include flexbox (space-between, center, row, 20px);
+            margin-bottom: 32px;
+
+            .about-menu-item{
+                @include flexbox (center, center, column, 0);
+                background-color:#FFF9F1;
+                border: 1px solid #F9C06A6B;
+                max-width: 280px;
+                padding: 36px 0;
+                width: 100%;
+
+                .about-item-img {
+                    margin-bottom: 25px;
+                }
+
+                .about-item-description{
+                    @include flexbox (center, center, column, 8px);
+
+                        h4 {
+                            @include  text ("Playfair Display", 700, 28px, 100%, #603809);
+                        }
+
+                        p {
+                            @include text ("Playfair Display", 400, 20px, 100%, #707070);
+                            text-align: center;
+                            // max-width: 211px;
+                        }
+                }
+
+            }
+        }
+
+        a {
+           @include a-like-button (#F9C06A, 134px, 16px 41px ); 
+        }
+
+    }
+}
+
+.chance {
+        padding: 54px 0 53px 0;
+        background-image: url(../img/chance-bg.png);
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .chance-wrapper {
+            @include flexbox (space-between, center, row, 25px);
+
+            .chance-description{
+                @include flexbox (unset, unset, column, 22px);
+                max-width: 575px;
+
+                h2{
+                    @include text ("Playfair Display", 700, 54px, 100%, #FFFFFF);
+
+                }
+
+                h3 {
+                    @include text ("Playfair Display", 400, 20px, 34px, #FFFFFF);
+                }
+
+                a {
+                        @include  a-like-button (#F9C06A, 134px, 16px 26px );
+                }
+            }
+        }
+}
+
+.feedback {
+    padding: 82px;
+    
+
+    .feedback-wrapper{
+        @include flexbox (unset, center, column, 0);
+
+            h2 {
+                @include  text ("Playfair Display", 700, 54px, 100%,#603809);
+                margin-bottom: 16px;
+            }
+
+            h3{
+                @include  text ("Playfair Display", 400, 20px, 34px,#707070);   
+                margin-bottom: 45px;
+            }
+            .feedback-card {
+                @include flexbox (unset, center, row, 0);
+                
+                .feedback-card-center{
+                    max-width: 980px;
+                    background-color: #FFF9F1;
+                    border: 1px solid #F9C06A6B;
+                    padding: 54px 29px 101px 29px;
+
+                    h4{
+                        @include  text ("Playfair Display", 700, 220px, 112px, #603809);
+                    }
+
+                    p{
+                        @include  text ("Playfair Display", 600, 18px, 36px,#707070);  
+                        text-align: center;
+                        padding:0 59px;
+                        margin-top: -40px;
+                        margin-bottom: 28px;
+                    }
+
+                    h5{
+                        @include  text ("Playfair Display", 700, 32px, 100%, #603809);
+                        text-align: center;
+                        margin-bottom: 4px;
+                    }
+
+                    h6 {
+                        @include  text ("Playfair Display", 400, 20px, 34px,#707070);  
+                        text-align: center;
+                    }
+                    
+                }
+
+                a {
+                    background-color: #F9C06A;
+                    @include flexbox (center, center, row, 0);
+                    height: 82px;
+                    width: 82px;
+                    border-radius: 16px;
+                    box-shadow: 0px 6px 12px 0px #F9C06A38;
+                }
+
+                .feedback-card-left{
+                    margin-right: -29px;
+                    z-index: 2;
+                }
+
+                .feedback-card-right{
+                    margin-left: -29px;
+                    z-index: 2;
+                }
+
+            }
+
+            .feedback-avatar{
+                margin-top: -68px;
+            }
+        }
+
+ }
+
+ footer {
+    .footer-top{
+        min-height: 374px;
+        background-image: url(../img/chance-bg.png);
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .footer-bottom{
+        background-color: #442808;
+        background-image: url(../img/footer-bottom-bg.png);
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 162px 0 40px 0;
+
+                .footer-bottom-wrapper {
+                    @include flexbox (space-between, flex-start, row, 0);
+
+                    .footer-bottom-text{
+                        @include flexbox (unset, unset, column, 20px);
+
+                            h2{
+                                @include text ("Clicker Script", 400, 54px, 100%, #FFFFFF);
+                            }
+
+                            p{
+                                @include text ("Playfair Display", 400, 14px, 22px, #FFFFFF);
+                                max-width: 380px;
+                            }
+
+                            .footer-bottom-socials{
+                                @include flexbox (unset, align-items, row, 22px);
+                            }
+                    }
+
+                    nav{
+                        max-width: 332px;
+                        @include flexbox (unset, unset, column, 0);
+
+                        h3 {
+                            @include text ("Playfair Display", 700, 26px, 100%, #FFFFFF);
+                            margin-bottom: 33px;
+                        }
+
+                        a{
+                            @include text ("Playfair Display", 400, 18px, 42px, #FFFFFF);
+                        }
+
+                    }
+                    
+                    nav:last-child h3 {
+                        margin-bottom: 9px;
+                    }
+
+                }
+    }
+
+ }
